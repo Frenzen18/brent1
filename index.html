@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brent Floro | Exiled Creator</title>
+    <meta
+      name="description"
+      content="A Path of Exile-inspired portfolio for Brent Floro, an IT student building interfaces, systems, and game projects."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-left"></div>
+      <div class="ambient ambient-right"></div>
+      <div class="grain"></div>
+
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="Go to home">
+          <span class="brand-mark">BF</span>
+          <span class="brand-copy">
+            <strong>Brent Floro</strong>
+            <span>Exiled Creator</span>
+          </span>
+        </a>
+
+        <nav class="topnav" aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#chronicle">Chronicle</a>
+          <a href="#tree">Ascendancy</a>
+          <a href="#quests">Quests</a>
+          <a href="#contact">Final Chamber</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow">The Exiled Creator</p>
+            <h1>
+              Brent Floro
+              <span>forges interfaces, systems, and game-facing work</span>
+            </h1>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#tree">Enter Skill Atlas</a>
+              <a class="button button-secondary" href="#quests">Inspect Quests</a>
+            </div>
+          </div>
+
+          <aside class="hero-sheet frame">
+            <div class="frame-header">
+              <span>Character Ledger</span>
+              <span class="status">Online</span>
+            </div>
+
+            <div class="sheet-grid">
+              <article>
+                <span class="label">Class</span>
+                <strong>Digital Blacksmith</strong>
+              </article>
+              <article>
+                <span class="label">Level</span>
+                <strong>Lvl 21</strong>
+                <div class="xp-block" aria-label="Experience progression">
+                  <span class="xp-copy">14 / 365 XP</span>
+                  <div class="meter xp-meter">
+                    <span style="width: 3.84%"></span>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <span class="label">Focus</span>
+                <strong>Title Defense,<br />Final Examination</strong>
+              </article>
+              <article>
+                <span class="label">Current Realm</span>
+                <strong>LPU Cavite</strong>
+              </article>
+            </div>
+
+            <div class="sheet-traits sheet-doctrine">
+              <div>
+                <div class="trait-head">
+                  <span>Growth Mindset</span>
+                  <strong>91%</strong>
+                </div>
+                <div class="meter"><span style="width: 91%"></span></div>
+              </div>
+              <div>
+                <div class="trait-head">
+                  <span>Critical Thinking</span>
+                  <strong>86%</strong>
+                </div>
+                <div class="meter"><span style="width: 86%"></span></div>
+              </div>
+              <div>
+                <div class="trait-head">
+                  <span>Continuous Learning</span>
+                  <strong>95%</strong>
+                </div>
+                <div class="meter"><span style="width: 95%"></span></div>
+              </div>
+              <div>
+                <div class="trait-head">
+                  <span>Communication</span>
+                  <strong>84%</strong>
+                </div>
+                <div class="meter"><span style="width: 84%"></span></div>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section chronicle" id="chronicle">
+          <div class="section-heading">
+            <p class="eyebrow">Education Log</p>
+            <h2>Chronicle</h2>
+            <p>
+              The route through school, technical foundations, and the current
+              stage of the build.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="frame timeline-item">
+              <span class="timeline-rank">01</span>
+              <h3>Our Lady of Divine Grace School of Manila</h3>
+              <p>Early academic foundation.</p>
+            </article>
+            <article class="frame timeline-item">
+              <span class="timeline-rank">02</span>
+              <h3>South Learners Creative School</h3>
+              <p>Development through intermediate schooling.</p>
+            </article>
+            <article class="frame timeline-item">
+              <span class="timeline-rank">03</span>
+              <h3>Rosario Institute</h3>
+              <p>Preparation for the more technical phase.</p>
+            </article>
+            <article class="frame timeline-item">
+              <span class="timeline-rank">04</span>
+              <h3>Lyceum of the Philippines University - Cavite</h3>
+              <p>Current IT track with coursework branching into systems and web.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section tree-section" id="tree">
+          <div class="section-heading section-heading-center">
+            <p class="eyebrow">Ascendancy</p>
+            <h2>Passive Skill Atlas</h2>
+            <p>
+              Coursework and technical progression arranged as a connected
+              node map. Select any node to inspect it.
+            </p>
+          </div>
+
+          <div class="tree-layout">
+            <div class="tree-frame frame">
+              <div class="tree-canvas" id="tree-canvas">
+                <svg class="tree-links" id="tree-links" aria-hidden="true"></svg>
+                <div class="tree-nodes" id="tree-nodes"></div>
+              </div>
+            </div>
+
+            <aside class="tree-detail frame" id="tree-detail">
+              <p class="detail-kicker">Node Record</p>
+              <h3 id="detail-title">Introduction to Computing</h3>
+              <p class="detail-subject" id="detail-subject">Subject: Introduction to Computing</p>
+              <p class="detail-type" id="detail-state">Unlocked</p>
+              <p class="detail-copy" id="detail-skill">
+                Skill learned: The foundation node where the broader IT path begins.
+              </p>
+              <dl class="detail-meta">
+                <div>
+                  <dt>Branch</dt>
+                  <dd id="detail-branch">Core</dd>
+                </div>
+                <div>
+                  <dt>Tier</dt>
+                  <dd id="detail-tier">Origin</dd>
+                </div>
+              </dl>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section quests" id="quests">
+          <div class="section-heading">
+            <p class="eyebrow">Quest Board</p>
+            <h2>Current Quests</h2>
+            <p>
+              Ongoing work, completed projects, and side objectives currently
+              shaping the portfolio.
+            </p>
+          </div>
+
+          <div class="quest-grid">
+            <article class="frame quest-card rarity-legendary">
+              <span class="quest-rarity">Legendary • Ongoing</span>
+              <h3>Title Defense</h3>
+              <p>Primary long-form academic objective driving the current season.</p>
+            </article>
+            <article class="frame quest-card rarity-rare">
+              <span class="quest-rarity">Game Project • Completed</span>
+              <h3>Echoes</h3>
+              <p>A completed game project and one of the stronger project anchors.</p>
+            </article>
+            <article class="frame quest-card rarity-common">
+              <span class="quest-rarity">Common Quest</span>
+              <h3>Dark Fantasy Web</h3>
+              <p>Interface direction blending game atmosphere with portfolio utility.</p>
+            </article>
+            <article class="frame quest-card rarity-rare">
+              <span class="quest-rarity">Rare Quest</span>
+              <h3>PC Cleaning</h3>
+              <p>Maintenance and setup work that keeps the workstation reliable.</p>
+            </article>
+            <article class="frame quest-card rarity-magic">
+              <span class="quest-rarity">Easy Quest</span>
+              <h3>AI Learning</h3>
+              <p>Ongoing study of tools, workflows, and practical AI-assisted output.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section final-chamber" id="contact">
+          <div class="frame chamber">
+            <p class="eyebrow">Final Chamber</p>
+            <h2>Send A Raven</h2>
+            <p>
+              Open for collaborations, immersive development work, game systems,
+              dark fantasy interfaces, and creative builds.
+            </p>
+
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:blueevolution143@gmail.com">Gmail</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/blueevolution143"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://www.facebook.com/brent.bobis.1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Facebook
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
